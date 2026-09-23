@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>700 Blind — Accessible Interaction Patterns</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#111;background:#fafafa}body{margin:0}.wrap{max-width:1000px;margin:auto;padding:48px 20px}.hero{padding:48px 0 36px;border-bottom:1px solid #ddd}.eyebrow{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(40px,8vw,84px);margin:.1em 0}.lead{font-size:20px;max-width:760px;line-height:1.5}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:32px}.card{background:#fff;border:1px solid #ddd;border-radius:16px;padding:20px}.card h2{margin-top:0}.meta{font-size:13px;color:#555}.contract{display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:14px}.pill{display:inline-block;border:1px solid #bbb;border-radius:99px;padding:4px 9px;margin:3px 3px 0 0;font-size:12px}.research{margin-top:48px;padding:28px;background:#111;color:#fff;border-radius:18px}code{font-family:ui-monospace,SFMono-Regular,monospace}</style>
+</head>
+<body><main class="wrap">
+<section class="hero">
+<div class="eyebrow">Kiara Lab R&D OSS</div>
+<h1>700 Blind</h1>
+<p class="lead">Open-source interaction patterns for interfaces that still work when users cannot reliably see, touch, type, or continuously attend to the screen.</p>
+<p><span class="pill">SwiftUI</span><span class="pill">VoiceOver</span><span class="pill">Voice Control</span><span class="pill">Boundary Theory</span></p>
+</section>
+<section class="grid">
+<article class="card"><h2>Voice Action</h2><p>Speak → intent → native action, with explicit accessible vocabulary.</p><p class="meta">VoiceOver: TEST • Voice Control: TEST</p><div class="contract"><b>Decide</b><span>Shared</span><b>Act</b><span>Agent</span></div></article>
+<article class="card"><h2>Accessible Form</h2><p>Semantic fields, explicit labels, predictable focus, and native controls.</p><p class="meta">Dynamic Type: TEST • VoiceOver: TEST</p><div class="contract"><b>Decide</b><span>Human</span><b>Act</b><span>Human / Agent</span></div></article>
+<article class="card"><h2>Risk-Aware Confirmation</h2><p>Confirmation changes with the reversibility and consequence of the action.</p><p class="meta">Boundary experiment</p><div class="contract"><b>Decide</b><span>Human</span><b>Act</b><span>Agent</span></div></article>
+<article class="card"><h2>Accessible Status</h2><p>State changes remain understandable without requiring visual attention.</p><p class="meta">Nonvisual feedback</p><div class="contract"><b>Observe</b><span>Agent</span><b>Verify</b><span>Shared</span></div></article>
+<article class="card"><h2>Reduced Motion</h2><p>Meaning survives when animation is reduced or removed.</p><p class="meta">Reduce Motion: TEST</p><div class="contract"><b>Understand</b><span>Human</span><b>Verify</b><span>Human</span></div></article>
+<article class="card"><h2>Recoverable Action</h2><p>Error → explanation → accessible retry instead of a visual dead end.</p><p class="meta">Failure recovery</p><div class="contract"><b>Act</b><span>Agent</span><b>Verify</b><span>Shared</span></div></article>
+</section>
+<section class="research"><h2>Boundary Theory</h2><p>Our question is not only <em>Can the agent do it?</em> It is <strong>Should the agent do it, and under what conditions?</strong></p><p><code>Observe → Understand → Decide → Act → Verify</code></p></section>
+</main></body></html>
