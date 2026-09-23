@@ -6,6 +6,11 @@
 
 > Accessibility → Extreme Use Cases → General UX
 
+<p align="center">
+  <img src="assets/700-blind-concept.gif" alt="Animated overview of 700 Blind: everyday need, accessible action, reusable developer recipe, and open-source experiment." width="600">
+</p>
+
+
 ## Simple idea / シンプルな考え方
 
 **700 experiments and app kits for blind people's daily life.**
