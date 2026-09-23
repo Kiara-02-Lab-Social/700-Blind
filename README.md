@@ -6,6 +6,39 @@
 
 > Accessibility → Extreme Use Cases → General UX
 
+<p align="center">
+  <img src="assets/700-blind-concept.gif" alt="Animated overview of 700 Blind: everyday need, accessible action, reusable developer recipe, and open-source experiment." width="600">
+</p>
+
+
+## Simple idea / シンプルな考え方
+
+**700 experiments and app kits for blind people's daily life.**
+
+We build **700 small experiments, UI patterns, and app components** inspired by the everyday needs of blind people.
+
+Developers can use them **piece by piece**, like a chef using recipes from a cookbook — copy one idea, adapt one component, or combine several patterns into a new product.
+
+**What:** 700 small accessibility experiments and reusable app components.  
+**Why:** Make everyday digital experiences easier for blind people, while discovering better interfaces for everyone.  
+**How:** **Build → Test → Learn → Open Source**
+
+> **700 experiments. 700 recipes. One open cookbook for accessible software.**
+
+### 日本語
+
+**視覚障害のある方の日常生活をより便利にする、700個の実験とアプリキット。**
+
+視覚障害のある方の日常の課題を起点に、**小さなUI、機能、アプリ、操作方法を700個実験し、使える形で公開**していきます。
+
+開発者は、料理人がレシピ本から必要なレシピを選ぶように、**必要な部分だけを1個ずつ引用・改良・組み合わせて、自分のアプリに利用できます。**
+
+**What:** アクセシビリティのための700個の小さな実験・UI・アプリ部品。  
+**Why:** 視覚障害のある方の日常を便利にし、そこから誰にとっても使いやすいUIを発見する。  
+**How:** **つくる → 試す → 学ぶ → OSSとして公開する**
+
+> **700の実験。700のレシピ。アクセシブルなソフトウェアをつくるための、オープンなレシピブック。**
+
 ## Why this exists
 
 Most UI libraries organize components by visual form: buttons, sheets, lists, inputs, navigation.
