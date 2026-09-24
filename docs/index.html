@@ -14,6 +14,16 @@
 <p class="lead">Open-source interaction patterns for interfaces that still work when users cannot reliably see, touch, type, or continuously attend to the screen.</p>
 <p><span class="pill">SwiftUI</span><span class="pill">VoiceOver</span><span class="pill">Voice Control</span><span class="pill">Boundary Theory</span></p>
 </section>
+<section id="listen" class="research" aria-labelledby="listen-title">
+<h2 id="listen-title">Audio Guide</h2>
+<p>This page can explain 700 Blind aloud using your browser's built-in speech synthesis. No audio file is required.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin:16px 0">
+<button id="speak-en" type="button">🔊 Listen in English</button>
+<button id="speak-ja" type="button">🔊 日本語で聞く</button>
+<button id="stop-speech" type="button">■ Stop</button>
+</div>
+<p class="meta">Screen readers can already read all page text. These buttons are an optional convenience layer.</p>
+</section>
 <section class="grid">
 <article class="card"><h2>Voice Action</h2><p>Speak → intent → native action, with explicit accessible vocabulary.</p><p class="meta">VoiceOver: TEST • Voice Control: TEST</p><div class="contract"><b>Decide</b><span>Shared</span><b>Act</b><span>Agent</span></div></article>
 <article class="card"><h2>Accessible Form</h2><p>Semantic fields, explicit labels, predictable focus, and native controls.</p><p class="meta">Dynamic Type: TEST • VoiceOver: TEST</p><div class="contract"><b>Decide</b><span>Human</span><b>Act</b><span>Human / Agent</span></div></article>
@@ -23,4 +33,24 @@
 <article class="card"><h2>Recoverable Action</h2><p>Error → explanation → accessible retry instead of a visual dead end.</p><p class="meta">Failure recovery</p><div class="contract"><b>Act</b><span>Agent</span><b>Verify</b><span>Shared</span></div></article>
 </section>
 <section class="research"><h2>Boundary Theory</h2><p>Our question is not only <em>Can the agent do it?</em> It is <strong>Should the agent do it, and under what conditions?</strong></p><p><code>Observe → Understand → Decide → Act → Verify</code></p></section>
+<script>
+const introEN = "Welcome to 700 Blind. We build 700 small experiments inspired by the everyday lives of blind people. Each experiment turns an accessibility problem into a simple, reusable software pattern. Developers can use them piece by piece, like recipes from a cookbook, to build more accessible products for everyone.";
+const introJA = "700 Blindへようこそ。私たちは、視覚障害のある方の日常生活から生まれる課題をもとに、700個の小さな実験をつくっています。それぞれを再利用できるソフトウェアの部品として公開し、開発者がレシピ本のように一つずつ自由に使えることを目指しています。よりアクセシブルなプロダクトを、みんなでつくるためのオープンソースプロジェクトです。";
+
+function speak(text, lang) {
+  if (!("speechSynthesis" in window)) {
+    alert("Speech synthesis is not supported in this browser.");
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = lang;
+  utterance.rate = 0.92;
+  window.speechSynthesis.speak(utterance);
+}
+
+document.getElementById("speak-en").addEventListener("click", () => speak(introEN, "en-US"));
+document.getElementById("speak-ja").addEventListener("click", () => speak(introJA, "ja-JP"));
+document.getElementById("stop-speech").addEventListener("click", () => window.speechSynthesis.cancel());
+</script>
 </main></body></html>
