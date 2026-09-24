@@ -10,6 +10,14 @@
   <img src="assets/700-blind-concept.gif" alt="Animated overview of 700 Blind: everyday need, accessible action, reusable developer recipe, and open-source experiment." width="600">
 </p>
 
+<p align="center">
+  <a href="https://kiara-02-lab-social.github.io/700-Blind/#listen">🔊 Listen in English</a>
+  &nbsp;•&nbsp;
+  <a href="https://kiara-02-lab-social.github.io/700-Blind/#listen">🔊 日本語で聞く</a>
+</p>
+
+> The README remains fully screen-reader friendly. The audio guide is an optional convenience layer.
+
 
 ## Simple idea / シンプルな考え方
 
